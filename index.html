@@ -1,334 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Conheço Angola</title>
-  
-  
-  <style>
-  
-      body{
-  font-family: 'Times New Roman', Times, serif;
-  background: black;
-}
-#article{
-  border-radius: 10px;
-  background: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.jogo{
-  color: white;
-  text-align: center;
-  background: #242635;
-  border-radius: 20px;
-}
-#tema{
-  display: none;
-  text-indent: 25px;
-  color: white;
-  background-image: linear-gradient(1deg,#E2201B,black);
-  border: 2px solid white;
-}
-#choco{
-  /*border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;*/
-  margin: auto auto;
-  border-top: 3px solid skyblue;
-  color: black;
-  background: white;
-}
-#tempo{
-  text-align: center;
-  color: red;
-}
-button{
-  font-size: 16px;
-  height: 30px;
-  width: 80%;
-  border-radius: 3px;
-  border: none;
-  background: #08FF08;
-  color: black;
-  font-family: 'Times New Roman', Times, serif;
-}
-#button{
-  
-  margin-left: 40px;
-  width: 80%;
-  font-size: 20px;
-  height: 40px;
-  font-weight: bold;
-  margin-top: 220px;
-  background: yellow;
-  color: blue;
-}
-#final{
-  display: none;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0px 0px 200px whitesmoke;
-  margin: 100px 0px 0px 40px;
-  background: red;
-  height: 460px;
-  width: 80%;
-}
-small{
-  color: greenyellow;
-}
-#final h2{
-  padding-top: 30px;
-  text-align: center;
-}
-#final a{
-  text-decoration: none;
-  background: Yellow;
-  padding: 5px 100px 5px 100px;
-}
-.perto{
-  margin-top: 10px;
-  text-align: center;
-  color: #B5B5BB;
-}
-.texto{
-  font-size: 100px;
-  margin-top: 10px;
-}
-#continuar a{
-  margin-top: 30px;
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
-  width: 100%;
-}
-#retorne a{
-  margin-top: 30px;
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
-}
-#certo{
-  text-align: center;
-  padding-top: 280px;
-  color: red;
-  display: none;
-}
-#nivel2{
-  border-radius: 10px;
-  background: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-#retorne{
-  display: none;
-  background-image: url("/giphy.png");
-  background-size: cover;
-}
-progress{
-  width: 100%;
-  height: 10px;
-  background: #424AAA;
-  color: #00F444;
-}
-#continuar{
-  font-family: 'Times New Roman', Times, serif;
-  display: none;
-  text-align: center;
-  margin: auto auto;
-  color: black;
-  background: #E5E5EC;
-  width: 100%;
-  height: 600px;
-  box-shadow: 0px 0px 40px white;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  background-image: url("/200.png");
-  
-}
-#a{
-  border: 2px solid black;
-  border-radius: 60px;
-  background: blue;
-  padding: 20px 0px 20px 0px;
-  position: fixed;
-  bottom: 0%;
-  left: 0%;
-  color: white;
-  font-size: 17px;
-}
-#b{
-  border: 2px solid black;
-  background: red;
-  padding: 20px 0px 20px 0px;
-  position: fixed;
-  bottom: 10%;
-  right: 0%;
-  font-size: 17px;
-  color: black;
-  border-radius: 60px;
-}
-#fixo{
-  display: flex;
-  position: fixed;
-  bottom: 0px;
-  background-image: linear-gradient(50deg, #17152B,#231D53,#362C90);
-  width: 100%;
-  height: 82px;
-}
-#fixo button{
-  width: 50%;
-  height: 50px;
-  background: white;
-  border: 1px solid #D7D7D8;
-}
-#fixo a{
-  font-size: 17px;
-  background: red;
-  height: 50px;
-  width: 50%;
-  border-radius: 5px;
-  border: 1px solid #D7D7D8;
-  color: black;
-}
-#claro{
-  margin: 250px 0px 0px 26px;
-  color: red;
-  display: none;
-  background: #484744;
-  padding: 30px 0px 30px 0px;
-  width: 85%;
-  text-align: center;
-  border-radius: 13px;
-  border: 1px solid #DBDDF1;
-  box-shadow: 0px 0px 30px white;
-}
-#claro a{
-  text-decoration: none;
-  padding: 5px 25px 5px 25px;
-  margin-top: 40px;
-  border-radius: 10px;
-  border: 2px solid black;
-  color: #CACBD0;
-}
-  </style>
-  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minhas Músicas - Belson</title>
+<style>
+  body { background: #111; color: white; text-align: center; font-family: Arial; padding: 20px; }
+  img { width: 200px; border-radius: 15px; }
+  .btn {
+    display: block;
+    background: #00c853;
+    color: white;
+    padding: 15px;
+    margin: 10px auto;
+    width: 250px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .btn-capa { background: #ff6d00; }
+</style>
 </head>
 <body>
-  
- <article id="article">
-    <h4 id="roma"></h4>
-    <progress value="0" max="100"></progress>
-    
-     <p id="tempo">0</p>
-    <div class="jogo">
-     <h1>Conheço Angola...</h1>
-    </div>
-    
-    <div id="tema">
-      
-      <h3 id="texto"></h3>
-  
-                
-          <div id="choco">
-          <button onclick="vamoA()" type="submit">[A]</button>
-           <div style="display: flex;" id="ouro1">
-            <p id="saida1"></p>
-             <img id="img" style="margin: auto auto;" src="/wolfgang_hasselmann-antelope-10348361~2.jpg" width="30%" alt="">
-            <p style="margin-left: 30px;" id="R1"></p>
 
-         </div>
-         </div>
-            
-          <div  id="choco">
-            <button onclick="vamoB()" type="submit">[B]</button>
-           <div style="display: flex;" id="ouro2">
-              <p id="saida2"></p>
-               <img style="margin: auto auto;" id="img1" src="/ianza-african-lion-2888519_1920.jpg" width="30%" alt="">
-              <p style="margin-left: 10px;" id="R2"></p>
-             
-           </div>
-          </div>
-          
-         <div  id="choco">
-         <button onclick="vamoC()" type="submit">[C]</button>
-         <div style="display: flex;" id="ouro3">
-            <p id="saida3"></p>
-            <img style="margin: auto auto;" id="img2" src="/1787318893364.PNG" width="30%" alt="">
-            <p style="margin-left: 10px;" id="R3"></p>
-          </div>
-         </div> 
-          
-          <div  id="choco">
-            <button onclick="vamoD()" type="submit">[D]</button>
-           
-        <div style="display: flex;" id="ouro4">
-              <p id="saida4"></p>
-              <img style="margin: auto auto;" id="img3" width="30%" src="/1787318970730.PNG" alt="">
-             <p style="margin-left: 90px;" id="R4"></p>
-           </div>
-          </div>
-    </div>
+<h1>Minhas Músicas</h1>
 
-  </article>
-   
-   
-  <div id="retorne">
-    <h1 style="color: red; background: black;">Tente novamente!</h1>
-    <p style="background: red; color: white; text-align: center; padding: 25px 0px 25px 0px;">Não disista pela primeira e nem pela segunda continue há tentar $</p>
-    
-    <p style="background: black; color: white; text-align: center; padding: 20px 0px 20px 0px;">Assim que você clicar em <b><u>Retorne</u></b><br>Para voltar continuar!</p>
-    <img src="/giphy.png" width="100%" alt="">
-    <div id="fixo">
-      <a style="text-decoration: none;" href="https://bel-son.github.io"><p id="veja">Rejeitar!</p></a>
-      <button onclick="claro()" type="submit">Retorne</button>
-     
-    </div>
-  </div>
-  
-      <button id="button" onclick="jogar()" type="submit" >Começar o jogo</button>
+<img src="/Belson01.jpg">
+<p>Nome da música - Belson</p>
 
-   <div id="continuar">
-      <h4 style="padding: 30px 0px 0px 0px;">Força não disista até você, ser um dos vencedores do site terás uma mega recompensa.</h4>
-    
-      <a id="b" href="seculo.html">Voltar</a>
-      <a id="a" href="nivel2.html">Continuar</a>
-  </div>
-  
-  
-  <article id="final">
-    <h2>Tempo esgotado!</h2>
-    <p class="perto">Tenta novamente, Para jogar e só Clicar no botão continuar</p>
-    <p class="texto">🤮</p>
-    <p><small>Belson software<br>siga este site: <u>https://bel-son.github.io</u></small></p>
-     <a href="seculo.html">Continuar</a>
-     
-  </article>
-  
-          
+<a class="btn" href="/PORTUGA MONSTRINHO - CICATRIZES_-_Prod( Sant Beats & Agatcho Beatz)_012627.mp3" download="paranormal da malta boss ok esse o melhor">⬇ BAIXAR MÚSICA</a>
+<a class="btn btn-capa" href="/Belson01.jpg" download>⬇ BAIXAR CAPA</a>
 
-   <div id="claro">
-       <p style="margin: 0px 0px 40px 0px; text-shadow: 0px 0px 5px black;">Confirma que você pretende chegar até o topo do jogo, ou melhor dizendo o final do jogo. <br>Clique em sim para confirmar.</p>
-       <a style="margin-right: 0px; background: red;" href="https://bel-son.github.io">Não</a>
-       <a style="margin-left: 80px; background: green;;" href="seculo.html">Sim</a>
-     
-   </div>
-  
-  <script src="index.js"></script>
-  <script src="ajuda.js" type="text/javascript" charset="utf-8"></script>
-  
-  <script>
-    function claro(){
-      let bhela = document.getElementById("claro")
-      let volta = document.getElementById("retorne")
-   
-      setTimeout(function(){
-      bhela.style="display: inline-block;"
-      volta.style="display: none;"
-   },600)
-}
-</script>
 </body>
 </html>
